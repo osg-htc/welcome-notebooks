@@ -1,5 +1,3 @@
-# HTC recipe notebooks
+# OSG Welcome Notebooks
 
-Repository of notebooks developing HTC "recipes"
-
-Should appear here: https://jupyter-dev.chtc.wisc.edu/
+Notebooks to automatically load in the OSPool Guest Notebook environment
