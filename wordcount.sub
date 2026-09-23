@@ -1,0 +1,14 @@
+shell = ./wordcount.py $(book)
+container_image = osdf://osg-public/containers/htc-images/ubuntu24.04.sif
+
+log = log/job.$(Cluster).log
+error = err/job.$(Cluster).$(Process).err
+output = out/job.$(Cluster).$(Process).out
+
+transfer_input_files = wordcount.py, $(book)
+
+request_cpus   = 1
+request_memory = 500MB
+request_disk   = 1GB
+
+queue book from book.list
